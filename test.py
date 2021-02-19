@@ -20,3 +20,7 @@ print('pass 3')
 driver = webdriver.Chrome('/usr/local/bin/chromedriver')
 driver.get('http://nytimes.com')
 print(driver.title)
+
+print('pass 4')
+
+exit()
