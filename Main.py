@@ -13,7 +13,7 @@ from GUI import *
 #initialize a path to the website
 
 def main():
-    PATH = "C:\Program Files (x86)\chromedriver.exe"
+    PATH = "/usr/local/bin/chromedriver"
     driver = webdriver.Chrome(PATH)
 
     # create list for the dropdown menus that need to be edited
