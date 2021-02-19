@@ -17,7 +17,7 @@ options.add_argument('--no-sandbox')
 
 print('pass 3')
 
-driver = webdriver.Chrome('/usr/local/bin/chromedriver')\
+driver = webdriver.Chrome('/usr/local/bin/chromedriver')
 print('pass 4.1')
 driver.get('http://nytimes.com')
 print('pass 4.2')
