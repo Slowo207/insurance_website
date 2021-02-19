@@ -16,7 +16,7 @@ today = str(date.today())
 today = (today[8:10] + today[5:7] + today[0:4])
 
 
-web = webdriver.Chrome("C:\Program Files (x86)\chromedriver.exe")
+web = webdriver.Chrome("/usr/local/bin/chromedriver")
 web.get('https://vrl.lta.gov.sg/lta/vrl/action/enquireTransferFeeProxy?FUNCTION_ID=F0501015ET')
 
 def printme():
