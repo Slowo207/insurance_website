@@ -11,6 +11,6 @@ display.start()
 options = webdriver.ChromeOptions()
 options.add_argument('--no-sandbox')
 
-driver = webdriver.Chrome(chrome_options=options)
+driver = webdriver.Chrome('/usr/local/bin/chromedriver')
 driver.get('http://nytimes.com')
 print(driver.title)
