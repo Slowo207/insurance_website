@@ -14,7 +14,7 @@ print("test2")
 driver = webdriver.Chrome(options=options)
 driver.get('http://nytimes.com')
       
-      print("test3")
+print("test3")
       
 print(driver.title)
 print("test4")
