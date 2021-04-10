@@ -12,6 +12,8 @@ from GUI import *
 
 #initialize a path to the website
 
+chrome_options.add_argument("--headless")
+
 def main():
     PATH = "/usr/local/bin/chromedriver"
     driver = webdriver.Chrome(PATH)
