@@ -3,6 +3,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
 import pandas as pd
 import numpy as np
 import pynput
@@ -12,11 +13,16 @@ from GUI import *
 
 #initialize a path to the website
 
+chrome_options = Options()
+#chrome_options.add_argument("--disable-extensions")
+#chrome_options.add_argument("--disable-gpu")
+#chrome_options.add_argument("--no-sandbox") # linux only
 chrome_options.add_argument("--headless")
+# chrome_options.headless = True # also works
 
 def main():
     PATH = "/usr/local/bin/chromedriver"
-    driver = webdriver.Chrome(PATH)
+    driver = webdriver.Chrome(PATH, options=chrome_options)
 
     # create list for the dropdown menus that need to be edited
     input_dropdown_ids = ["_9999999:EP_PolicyForm_insuredForm_insuredSOABO_vehicleInsuredSOABO_make_container",
